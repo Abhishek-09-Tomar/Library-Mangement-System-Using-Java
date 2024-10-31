@@ -50,14 +50,13 @@ public class LibraryManagementSystem extends Application {
 
         loginLayout.getChildren().addAll(titleLabel, usernameField, passwordField, loginButton);
 
-        Scene loginScene = new Scene(loginLayout, 300, 200);
+        Scene loginScene = new Scene(loginLayout, 400, 300);
         primaryStage.setScene(loginScene);
         primaryStage.show();
     }
 
     private boolean validateCredentials(String username, String password) {
-        // Updated credentials
-        return "abhishektomar".equals(username) && "12345".equals(password);
+        return "abhishek".equals(username) && "12345".equals(password);
     }
 
     private void showDashboard() {
@@ -69,28 +68,23 @@ public class LibraryManagementSystem extends Application {
         navMenu.setStyle("-fx-background-color: #333; -fx-padding: 10;");
 
         Button manageBooksButton = new Button("Manage Books");
-        manageBooksButton.setStyle("-fx-text-fill: purple; -fx-background-color: lightblue;");
         manageBooksButton.setOnAction(event -> showManageBooks());
 
         Button manageMembersButton = new Button("Manage Members");
-        manageMembersButton.setStyle("-fx-text-fill: purple; -fx-background-color: lightblue;");
         manageMembersButton.setOnAction(event -> showManageMembers());
 
         Button issueBookButton = new Button("Issue Book");
-        issueBookButton.setStyle("-fx-text-fill: purple; -fx-background-color: lightblue;");
         issueBookButton.setOnAction(event -> showIssueBook());
 
         Button returnBookButton = new Button("Return Book");
-        returnBookButton.setStyle("-fx-text-fill: purple; -fx-background-color: lightblue;");
         returnBookButton.setOnAction(event -> showReturnBook());
 
         Button reportsButton = new Button("Reports & Analytics");
-        reportsButton.setStyle("-fx-text-fill: purple; -fx-background-color: lightblue;");
         reportsButton.setOnAction(event -> showReports());
 
         navMenu.getChildren().addAll(manageBooksButton, manageMembersButton, issueBookButton, returnBookButton, reportsButton);
 
-        // Center Content: Welcome Label and Search
+        // Center Content
         VBox centerLayout = new VBox(10);
         centerLayout.setPadding(new Insets(10));
         Label welcomeLabel = new Label("Welcome To The Library Dashboard");
@@ -102,79 +96,117 @@ public class LibraryManagementSystem extends Application {
         searchButton.setOnAction(event -> System.out.println("Searching for: " + searchField.getText()));
 
         HBox searchLayout = new HBox(5, searchField, searchButton);
-        searchLayout.setPadding(new Insets(10));
-
         centerLayout.getChildren().addAll(welcomeLabel, searchLayout);
 
-        // Right Pane for Notifications and Alerts
-        VBox notifications = new VBox(10);
-        notifications.setPadding(new Insets(10));
-        notifications.setStyle("-fx-background-color: #eee; -fx-padding: 10;");
-        Label notificationLabel = new Label("Notifications & Alerts");
-        notificationLabel.setStyle("-fx-font-weight: bold;");
-
-        Label overdueBooksNotification = new Label("Overdue Books: 5");
-        Label lowInventoryNotification = new Label("Low Inventory on Popular Books");
-
-        notifications.getChildren().addAll(notificationLabel, overdueBooksNotification, lowInventoryNotification);
-
-        // Arrange components on Dashboard
         dashboardLayout.setLeft(navMenu);
         dashboardLayout.setCenter(centerLayout);
-        dashboardLayout.setRight(notifications);
 
         Scene dashboardScene = new Scene(dashboardLayout, 800, 500);
         primaryStage.setScene(dashboardScene);
         primaryStage.show();
     }
 
-    // Placeholder for each section
     private void showManageBooks() {
-        System.out.println("Navigating to Manage Books");
-        // Add Book Management UI here
-        // Includes adding, editing, deleting book records, etc.
+        Stage bookStage = new Stage();
+        bookStage.setTitle("Manage Books");
+
+        VBox bookLayout = new VBox(10);
+        bookLayout.setPadding(new Insets(10));
+        Label bookLabel = new Label("Manage Books");
+        bookLabel.setStyle("-fx-font-size: 18px;");
+
+        Button addBookButton = new Button("Add Book");
+        Button editBookButton = new Button("Edit Book");
+        Button deleteBookButton = new Button("Delete Book");
+
+        bookLayout.getChildren().addAll(bookLabel, addBookButton, editBookButton, deleteBookButton);
+        Scene bookScene = new Scene(bookLayout, 400, 300);
+        bookStage.setScene(bookScene);
+        bookStage.show();
     }
 
     private void showManageMembers() {
-        System.out.println("Navigating to Manage Members");
-        // Add Member Management UI here
-        // Includes adding, editing, deleting members, viewing borrowing history
+        Stage memberStage = new Stage();
+        memberStage.setTitle("Manage Members");
+
+        VBox memberLayout = new VBox(10);
+        memberLayout.setPadding(new Insets(10));
+        Label memberLabel = new Label("Manage Members");
+        memberLabel.setStyle("-fx-font-size: 18px;");
+
+        Button addMemberButton = new Button("Add Member");
+        Button editMemberButton = new Button("Edit Member");
+        Button deleteMemberButton = new Button("Delete Member");
+
+        memberLayout.getChildren().addAll(memberLabel, addMemberButton, editMemberButton, deleteMemberButton);
+        Scene memberScene = new Scene(memberLayout, 400, 300);
+        memberStage.setScene(memberScene);
+        memberStage.show();
     }
 
     private void showIssueBook() {
-        System.out.println("Navigating to Issue Book");
-        // Add Issue Book UI here
-        // Select member and book, set due date, etc.
+        Stage issueStage = new Stage();
+        issueStage.setTitle("Issue Book");
+
+        VBox issueLayout = new VBox(10);
+        issueLayout.setPadding(new Insets(10));
+        Label issueLabel = new Label("Issue Book");
+        issueLabel.setStyle("-fx-font-size: 18px;");
+
+        TextField bookIdField = new TextField();
+        bookIdField.setPromptText("Book ID");
+        TextField memberIdField = new TextField();
+        memberIdField.setPromptText("Member ID");
+        DatePicker issueDate = new DatePicker();
+        issueDate.setPromptText("Issue Date");
+
+        Button issueButton = new Button("Issue Book");
+
+        issueLayout.getChildren().addAll(issueLabel, bookIdField, memberIdField, issueDate, issueButton);
+        Scene issueScene = new Scene(issueLayout, 400, 300);
+        issueStage.setScene(issueScene);
+        issueStage.show();
     }
 
     private void showReturnBook() {
-        System.out.println("Navigating to Return Book");
-        // Add Return Book UI here
-        // Look up book, check for fines, update inventory
+        Stage returnStage = new Stage();
+        returnStage.setTitle("Return Book");
+
+        VBox returnLayout = new VBox(10);
+        returnLayout.setPadding(new Insets(10));
+        Label returnLabel = new Label("Return Book");
+        returnLabel.setStyle("-fx-font-size: 18px;");
+
+        TextField bookIdField = new TextField();
+        bookIdField.setPromptText("Book ID");
+        DatePicker returnDate = new DatePicker();
+        returnDate.setPromptText("Return Date");
+
+        Button returnButton = new Button("Return Book");
+
+        returnLayout.getChildren().addAll(returnLabel, bookIdField, returnDate, returnButton);
+        Scene returnScene = new Scene(returnLayout, 400, 300);
+        returnStage.setScene(returnScene);
+        returnStage.show();
     }
 
     private void showReports() {
-        System.out.println("Navigating to Reports & Analytics");
-        VBox reportsLayout = new VBox(10);
-        reportsLayout.setPadding(new Insets(10));
+        Stage reportStage = new Stage();
+        reportStage.setTitle("Reports & Analytics");
 
-        Label reportsLabel = new Label("Reports & Analytics");
-        reportsLabel.setStyle("-fx-font-size: 18px;");
+        VBox reportLayout = new VBox(10);
+        reportLayout.setPadding(new Insets(10));
+        Label reportLabel = new Label("Reports & Analytics");
+        reportLabel.setStyle("-fx-font-size: 18px;");
 
-        // UI elements for reports
         Button overdueBooksReportButton = new Button("View Overdue Books");
-        overdueBooksReportButton.setOnAction(event -> System.out.println("Generating Overdue Books Report..."));
-
         Button popularBooksReportButton = new Button("View Popular Books");
-        popularBooksReportButton.setOnAction(event -> System.out.println("Generating Popular Books Report..."));
-
         Button borrowingTrendsReportButton = new Button("View Borrowing Trends");
-        borrowingTrendsReportButton.setOnAction(event -> System.out.println("Generating Borrowing Trends Report..."));
 
-        reportsLayout.getChildren().addAll(reportsLabel, overdueBooksReportButton, popularBooksReportButton, borrowingTrendsReportButton);
-
-        Scene reportsScene = new Scene(reportsLayout, 400, 300);
-        primaryStage.setScene(reportsScene);
+        reportLayout.getChildren().addAll(reportLabel, overdueBooksReportButton, popularBooksReportButton, borrowingTrendsReportButton);
+        Scene reportScene = new Scene(reportLayout, 400, 300);
+        reportStage.setScene(reportScene);
+        reportStage.show();
     }
 
     private void showAlert(String title, String message) {
