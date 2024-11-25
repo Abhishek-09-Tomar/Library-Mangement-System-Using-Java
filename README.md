@@ -45,7 +45,7 @@ The project combines robust back-end programming with modern web technologies an
 
 ### ⚙️ **Build & Dependency Management**  
 - **Maven**: Handles project dependencies and build automation.  
-  <img src="https://img.icons8.com/color/80/maven.png" width="80" alt="Maven Logo"/>  
+  <img src="https://maven.apache.org/images/apache-maven-project.png" width="80" alt="Maven Logo"/>  
 
 ---
 
