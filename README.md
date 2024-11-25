@@ -1,4 +1,4 @@
-Here’s the updated README with your LinkedIn profile link included:  
+Here's the updated README with the new contributor names included:
 
 ---
 
@@ -110,6 +110,9 @@ cd Library-Mangement-System-Using-Java
 |------------------|------------------------|-------------------------------------------|  
 | **Abhishek Tomar** | Lead Developer         | [GitHub](https://github.com/Abhishek-09-Tomar) |  
 | **Abhishek Tomar** | Lead Developer         | [LinkedIn](https://www.linkedin.com/in/abhishek-tomar-7aa29127b) |  
+| **Divyansh Pandey** | Developer              | -                                         |  
+| **Kanishka Singh** | Developer              | -                                         |  
+| **Ayush Rai**      | Developer              | -                                         |  
 
 ---
 
@@ -135,4 +138,4 @@ If you found this project helpful, give it a ⭐️!
 
 ---
 
-Let me know if there are further tweaks or details you'd like to include!
+Let me know if there are any other changes or details you'd like to include!
