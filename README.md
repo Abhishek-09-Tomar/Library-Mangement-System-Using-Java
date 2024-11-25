@@ -1,4 +1,4 @@
-Here's the updated README with the new contributor names included:
+Here's the fully updated README incorporating the **"First User Interaction Page"** section:  
 
 ---
 
@@ -50,6 +50,17 @@ The project combines robust back-end programming with modern web technologies an
 ### ⚙️ **Build & Dependency Management**  
 - **Maven**: Handles project dependencies and build automation.  
   <img src="https://img.icons8.com/color/80/maven.png" width="80" alt="Maven Logo"/>  
+
+---
+
+## 🌟 **First User Interaction Page**
+
+The **Library Management System** starts with an interactive and visually appealing homepage. This page welcomes users with a sleek design, showcasing the system's branding and providing easy access to login and sign-up options.
+
+### 📷 **Screenshot**  
+<p align="center">
+  <img src="path-to-your-image-folder/Screenshot%202024-11-25%20132705.png" alt="First User Interaction Page" width="80%"/>
+</p>
 
 ---
 
@@ -108,10 +119,11 @@ cd Library-Mangement-System-Using-Java
 
 | Name             | Role                   | Profile                                    |  
 |------------------|------------------------|-------------------------------------------|  
-| **Abhishek Tomar** | Lead Developer         | [GitHub](https://github.com/Abhishek-09-Tomar) |
-| **Divyansh Pandey** | Developer              | -                                         |  
-| **Kanishka Singh** | Developer              | -                                         |  
-| **Ayush Rai**      | Developer              | -                                         |  
+| **Abhishek Tomar** | Lead Developer         | [GitHub](https://github.com/Abhishek-09-Tomar) |  
+| **Abhishek Tomar** | Lead Developer         | [LinkedIn](https://www.linkedin.com/in/abhishek-tomar-7aa29127b) |  
+| **Divyansh Pandey** | Developer              |                                           |  
+| **Kanishka Singh** | Developer              |                                           |  
+| **Ayush Rai**      | Developer              |                                           |  
 
 ---
 
@@ -137,4 +149,4 @@ If you found this project helpful, give it a ⭐️!
 
 ---
 
-Let me know if there are any other changes or details you'd like to include!
+Let me know if there’s anything more to refine!
