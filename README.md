@@ -1,10 +1,7 @@
 Here's the fully updated README incorporating the **"First User Interaction Page"** section:  
 
 ---
-
 # 📖 **Library Management System Using Java** 
-
-<p align="center"> <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" style="stop-color:#6A11CB;stop-opacity:1" /> <stop offset="100%" style="stop-color:#2575FC;stop-opacity:1" /> </linearGradient> </defs> <rect width="100%" height="200" fill="url(#gradient)" /> <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="50" font-family="'Lobster', cursive">Library Management System</text> <text x="50%" y="80%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="20" font-family="'Poppins', sans-serif">Built with Java, MySQL, HTML, CSS, JavaScript</text> </svg> </p>
 
 ## 🎯 **About the Project**  
 This **Library Management System** is a complete solution for organizing and automating library operations. Built with **Java** for back-end logic, a **web-based UI** crafted using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**, and **MySQL** for secure data management.  
