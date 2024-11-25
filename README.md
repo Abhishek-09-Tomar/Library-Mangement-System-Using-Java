@@ -108,8 +108,7 @@ cd Library-Mangement-System-Using-Java
 
 | Name             | Role                   | Profile                                    |  
 |------------------|------------------------|-------------------------------------------|  
-| **Abhishek Tomar** | Lead Developer         | [GitHub](https://github.com/Abhishek-09-Tomar) |  
-| **Abhishek Tomar** | Lead Developer         | [LinkedIn](https://www.linkedin.com/in/abhishek-tomar-7aa29127b) |  
+| **Abhishek Tomar** | Lead Developer         | [GitHub](https://github.com/Abhishek-09-Tomar) |
 | **Divyansh Pandey** | Developer              | -                                         |  
 | **Kanishka Singh** | Developer              | -                                         |  
 | **Ayush Rai**      | Developer              | -                                         |  
