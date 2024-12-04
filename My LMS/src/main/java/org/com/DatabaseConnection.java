@@ -12,7 +12,7 @@ public class DatabaseConnection {
 
         try (Connection connection = DriverManager.getConnection(url, user, password)) {
             if (connection != null) {
-                System.out.println("Connected to the database!");
+                System.out.println("Connected to the database Successfully!");
             }
         } catch (SQLException e) {
             System.err.println("Database connection failed!");
